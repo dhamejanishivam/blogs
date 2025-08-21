@@ -6,8 +6,22 @@
     <description>Recent content on Shivam’s Blog</description>
     <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Aug 2025 15:19:42 +0530</lastBuildDate>
     <atom:link href="https://dhamejanishivam.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://dhamejanishivam.github.io/blogs/about/</link>
+      <pubDate>Thu, 21 Aug 2025 15:19:42 +0530</pubDate>
+      <guid>https://dhamejanishivam.github.io/blogs/about/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;I started this blog to share the things I’m learning ; in tech, in life, and in everything I stumble into along the way.&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;
+I don’t promise polished answers, just real experiences, lessons, and maybe a few mistakes worth avoiding.&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
+&lt;p&gt;If you’d like me to change/add something, or just want to share your thoughts on my work, feel free to reach out.&lt;br&gt;
+Or if you just want to say hi:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Prompt Engineering</title>
       <link>https://dhamejanishivam.github.io/blogs/posts/prompt_engineering/</link>

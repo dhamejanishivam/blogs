@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dhamejanishivam.github.io/blogs/about/</loc>
+    <lastmod>2025-08-21T15:19:42+05:30</lastmod>
+  </url><url>
     <loc>https://dhamejanishivam.github.io/blogs/</loc>
     <lastmod>2025-08-21T15:19:42+05:30</lastmod>
   </url><url>
@@ -13,7 +16,7 @@
   </url><url>
     <loc>https://dhamejanishivam.github.io/blogs/categories/</loc>
   </url><url>
-    <loc>https://dhamejanishivam.github.io/blogs/search/</loc>
+    <loc>https://dhamejanishivam.github.io/blogs/archive/</loc>
   </url><url>
     <loc>https://dhamejanishivam.github.io/blogs/tags/</loc>
   </url>
