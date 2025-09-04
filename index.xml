@@ -42,6 +42,20 @@ Or if you just want to say hi:&lt;/p&gt;</description>
 &lt;p&gt;&lt;em&gt;(These are just some of the features. GitHub is constantly adding more.)&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Transformers</title>
+      <link>https://dhamejanishivam.github.io/blogs/posts/transformers/</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://dhamejanishivam.github.io/blogs/posts/transformers/</guid>
+      <description>&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#39;display:flex;justify-content:center;align-items:center;&#39;&gt;
+&lt;h4 style=&#39;color:#eee;text-shadow:  -1px -1px 0 #222, /* Top-left shadow */
+            1px -1px 0 #222,  /* Top-right shadow */
+            -1px 1px 0 #222,  /* Bottom-left shadow */
+            1px 1px 0 #222&#39;&gt;Currently this blog is under progress, but hold tight;&lt;br&gt; It is coming soon&lt;/h4&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Prompt Engineering</title>
       <link>https://dhamejanishivam.github.io/blogs/posts/prompt_engineering/</link>
       <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
