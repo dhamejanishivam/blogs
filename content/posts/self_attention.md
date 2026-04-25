@@ -1,5 +1,5 @@
 +++
-date = '2026-04-27'
+date = '2026-04-25'
 draft = false
 title = 'Self-Attention Mechanism'
 +++

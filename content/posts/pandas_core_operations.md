@@ -1,5 +1,5 @@
 +++
-date = '2026-04-28'
+date = '2026-04-25'
 draft = false
 title = 'Pandas Core Operations'
 +++

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Shivam’s Blog</title>
+    <link>https://dhamejanishivam.github.io/blogs/posts/</link>
+    <description>Recent content in Posts on Shivam’s Blog</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dhamejanishivam.github.io/blogs/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas Core Operations</title>
+      <link>https://dhamejanishivam.github.io/blogs/posts/pandas_core_operations/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://dhamejanishivam.github.io/blogs/posts/pandas_core_operations/</guid>
+      <description>&lt;p&gt;Pandas is the standard Python library for data manipulation and analysis.&lt;/p&gt;
+&lt;h3 id=&#34;reading-data&#34;&gt;Reading Data&lt;/h3&gt;
+&lt;p&gt;Load data from a CSV file into a DataFrame.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; pd
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dataset.csv&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;exploring-data&#34;&gt;Exploring Data&lt;/h3&gt;
+&lt;p&gt;Basic methods to inspect the dataset.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head()       &lt;span style=&#34;color:#75715e&#34;&gt;# View first 5 rows&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;info()       &lt;span style=&#34;color:#75715e&#34;&gt;# Summary of columns and data types&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;df&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;describe()   &lt;span style=&#34;color:#75715e&#34;&gt;# Statistical summary of numerical columns&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;filtering-data&#34;&gt;Filtering Data&lt;/h3&gt;
+&lt;p&gt;Extract specific rows based on conditions.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Filter where age is greater than 30&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;filtered_df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; df[df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;age&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Multiple conditions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;filtered_df &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; df[(df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;age&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt; (df[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;department&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Engineering&amp;#39;&lt;/span&gt;)]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;handling-missing-values&#34;&gt;Handling Missing Values&lt;/h3&gt;
+&lt;p&gt;Deal with &lt;code&gt;NaN&lt;/code&gt; values.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Virtual Environments</title>
+      <link>https://dhamejanishivam.github.io/blogs/posts/python_virtual_environments/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://dhamejanishivam.github.io/blogs/posts/python_virtual_environments/</guid>
+      <description>&lt;p&gt;A virtual environment isolates Python dependencies for a specific project, preventing version conflicts across system-wide packages.&lt;/p&gt;
+&lt;h3 id=&#34;creating-a-virtual-environment&#34;&gt;Creating a Virtual Environment&lt;/h3&gt;
+&lt;p&gt;Use the built-in &lt;code&gt;venv&lt;/code&gt; module.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 -m venv venv
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;activating-the-environment&#34;&gt;Activating the Environment&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;macOS/Linux:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source venv/bin/activate
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Windows:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;venv\Scripts\activate
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;managing-dependencies&#34;&gt;Managing Dependencies&lt;/h3&gt;
+&lt;p&gt;Install packages using &lt;code&gt;pip&lt;/code&gt; and freeze them into a &lt;code&gt;requirements.txt&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install numpy pandas
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip freeze &amp;gt; requirements.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install dependencies from a file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install -r requirements.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;deactivating&#34;&gt;Deactivating&lt;/h3&gt;
+&lt;p&gt;Return to the global Python environment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Self-Attention Mechanism</title>
+      <link>https://dhamejanishivam.github.io/blogs/posts/self_attention/</link>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://dhamejanishivam.github.io/blogs/posts/self_attention/</guid>
+      <description>&lt;p&gt;Self-attention is the core component of the Transformer architecture. It allows a model to weigh the importance of different words in an input sequence when processing a specific word.&lt;/p&gt;
+&lt;h3 id=&#34;how-it-works&#34;&gt;How it Works&lt;/h3&gt;
+&lt;p&gt;Instead of processing tokens sequentially (like RNNs), self-attention computes three vectors for each token:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Query (Q):&lt;/strong&gt; What I am looking for.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Key (K):&lt;/strong&gt; What I contain.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Value (V):&lt;/strong&gt; My actual content.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The attention score is calculated by taking the dot product of the Query of the current word with the Keys of all other words. This score dictates how much focus to place on other words&amp;rsquo; Values.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub</title>
+      <link>https://dhamejanishivam.github.io/blogs/posts/second_blog/</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://dhamejanishivam.github.io/blogs/posts/second_blog/</guid>
+      <description>&lt;h4 id=&#34;github-is-a-platform-that-allows-software-developers-to-store-share-and-manage-their-code-it-also-enables-collaboration-with-other-developers&#34;&gt;GitHub is a platform that allows software developers to store, share, and manage their code. It also enables collaboration with other developers.&lt;/h4&gt;
+&lt;p&gt; 
+ &lt;/p&gt;
+&lt;h3 id=&#34;some-features-of-github&#34;&gt;Some features of GitHub:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;You can upload your code and store it securely.&lt;/li&gt;
+&lt;li&gt;You can host static websites directly from your repositories.&lt;/li&gt;
+&lt;li&gt;You can share your code with other developers.&lt;/li&gt;
+&lt;li&gt;Other developers can contribute to your repositories (if you allow it), and you can do the same for theirs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;(These are just some of the features. GitHub is constantly adding more.)&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transformers</title>
+      <link>https://dhamejanishivam.github.io/blogs/posts/transformers/</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://dhamejanishivam.github.io/blogs/posts/transformers/</guid>
+      <description>&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div style=&#39;display:flex;justify-content:center;align-items:center;&#39;&gt;
+&lt;h4 style=&#39;color:#eee;text-shadow:  -1px -1px 0 #222, /* Top-left shadow */
+            1px -1px 0 #222,  /* Top-right shadow */
+            -1px 1px 0 #222,  /* Bottom-left shadow */
+            1px 1px 0 #222&#39;&gt;Currently this blog is under progress, but hold tight;&lt;br&gt; It is coming soon&lt;/h4&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering</title>
+      <link>https://dhamejanishivam.github.io/blogs/posts/prompt_engineering/</link>
+      <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://dhamejanishivam.github.io/blogs/posts/prompt_engineering/</guid>
+      <description>&lt;p&gt;Prompt engineering is about wording your requests so the model actually does what you want. Here’s the simplest breakdown of the main types with examples.&lt;/p&gt;
+&lt;h2 id=&#34;types-of-prompting&#34;&gt;Types of prompting&lt;/h2&gt;
+&lt;h3 id=&#34;zero-shot-prompting&#34;&gt;Zero-shot prompting&lt;/h3&gt;
+&lt;p&gt;You just ask directly, with no example. The system figures it out from training. Works for simple tasks.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# zero-shot prompt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;prompt &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Summarize the following text in one sentence: &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Apple releases a new iPhone &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; better battery life &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; camera&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;one-shot-prompting&#34;&gt;One-shot prompting&lt;/h3&gt;
+&lt;p&gt;You give exactly one example along with the instruction. That single example guides the model.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

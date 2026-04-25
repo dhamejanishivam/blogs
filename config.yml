@@ -1,0 +1,73 @@
+baseURL: "https://dhamejanishivam.github.io/blogs/"
+languageCode: "en-us"
+title: "Shivam’s Blog"
+theme: "PaperMod"
+
+params:
+  title: "Shivam’s Blog"
+  description: "Tech, growth, and personal notes from Shivam"
+  author: "Shivam Dhamejani"
+
+  homeInfoParams:
+    Title: "🥂 Hello folks, Welcome to my blog"
+    content: "Here I try to share what I have learnt, or what I know, I will try to document it as much as possible"
+  socialIcons:
+    - name: "Github"
+      url: 'https://github.com/dhamejanishivam'
+    - name: "Linkedin"
+      url: 'https://www.linkedin.com/in/shivamdhamejani/'
+    - name: "Instagram"
+      url: 'https://instagram.com/shivam__dhamejani'
+    
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+
+  ShowSearch: true
+  SearchScope: "site"
+  SearchOpen: true
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  defaultTheme: auto
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+
+  ShowCodeCopyButtons: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: search
+      weight: 20
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON 
